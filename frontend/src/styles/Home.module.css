@@ -1,0 +1,10 @@
+.container {
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #2D0F4E;
+}
