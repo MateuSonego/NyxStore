@@ -1,0 +1,38 @@
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9F7AEA;
+}
+
+.dps {
+    width: 750px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    background-color: rebeccapurple;
+    border: red 2px solid;
+    
+}
+
+.left {
+    width: 35%;
+    height: inherit;
+    border: white 2px solid;
+
+    top: 0;
+    left: 0;
+    background-image: url("../assets/LoginImage.png");
+    background-size: cover;
+    background-position:left;
+    z-index: 1;
+}
+
+.right {
+    width: 65%;
+    height: inherit;
+    border: green 2px solid;
+    background-color: #F6F3FB;
+}

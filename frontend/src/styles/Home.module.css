@@ -1,10 +1,52 @@
-.container {
+.mainContainer {
     color: #fff;
 }
 
+.stripe {
+    background-color: #1F2937;
+    height: 20px;
+}
+
 .navbar {
+    height: 90px;
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: #2D0F4E;
+    border-bottom: #F6F3FB 2px solid;
 }
+
+.left {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.middle {
+  width: 33%;
+}
+
+.right {
+  width: 33%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navLogo {
+  height: 80px;
+  object-fit: contain;
+
+}
+
+.navIcons {
+    color: #F6F3FB;
+    align-self: center;
+
+}
+
+
+
+

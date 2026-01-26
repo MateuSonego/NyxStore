@@ -1,32 +1,46 @@
 import { Link } from "react-router-dom";
 
+import { FaUser } from "react-icons/fa";
+import { FaShoppingBag } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
+
+import whitelogo from "../assets/NyxWhiteLogo.png"
+
 import styles from "../styles/Home.module.css"
 
-import logo from "../assets/NyxLogo.png"
-import logo2 from "../assets/NyxLogo2.png"
 
 function HomePage() {
     return (
 
-        <div className={styles.container}>
+        <div className={styles.mainContainer}>
+            <div className={styles.stripe}>
 
+            </div>
             <div className={styles.navbar}>
-                <div className="left">
-                    <h1>Nyx Store</h1>
+
+
+                <div className={styles.left}>
+                    <img className={styles.navLogo} src={whitelogo} alt="" />
+                </div>
+                <div className={styles.middle}>
+
                 </div>
 
-                <div className="right">
-                    <Link to="/login">Login</Link>
-                    <Link to="/register">Cadastro</Link>
+                <div className={styles.right}>
+                    <Link to="/search">
+                        <FaSearch className={styles.navIcons} size={32} />
+                    </Link>
+
+                    <Link to="/cart">
+                        <FaShoppingBag className={styles.navIcons} size={32} />
+                    </Link>
+                    <Link to="/login">
+                        <FaUser className={styles.navIcons} size={32} />
+                    </Link>
+
                 </div>
             </div>
 
-            <div>
-                <img src={logo} alt="" />
-            </div>
-            <div>
-                <img src={logo2} alt="" />
-            </div>
 
         </div>
     );

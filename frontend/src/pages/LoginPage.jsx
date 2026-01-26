@@ -1,17 +1,22 @@
+import styles from "../styles/Login.module.css"
+
+import loginImage from "../assets/LoginImage.png"
+
 function LoginPage() {
     return (
-        
-        <div>
 
-            <div className="navbar">
-                <div className="left">
-                    <h1>Login</h1>
+        <div className={styles.mainContainer}>
+            <div className={styles.dps}>
+                
+                <div className={styles.left}>
+
                 </div>
 
-                <div className="right">
+                <div className={styles.right}>
 
                 </div>
             </div>
+
 
         </div>
     );
